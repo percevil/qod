@@ -2,21 +2,19 @@
 
     // code goes here
 
-    // 1:get request to grab random post and append to the DOM
 
-    // Add a click evetn for the "Show Me Another" buttin an rthen run the
-    //Ajax code below
+    // 1: get request to grab random post and append to the DOM
 
+    // add a click event for the "Show Me Another" btn and then run the AJAX code below
     $.ajax({
-        method:"GET",
-        url:// qod_vars.rest_url + /wp/v2/
-
-    }).done(function(data){
+        method: "GET",
+        url: // qod_vars.rest_url + /wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1
+    }).done(function (data) {
         console.log(data);
-    }
-    //2: post a new quote using the post method
-    // Using s form a new quote using
-
+        // append the quote to the DOM
+    }).fail(function (error) {
+        console.log("an error occurred", error);
+    });
 })(jQuery);
 
 // IIFE - immediately invoked function expression.

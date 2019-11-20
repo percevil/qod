@@ -63,7 +63,7 @@ function qod_scripts() {
 	wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'qod-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
-	//*** HERE IS WHERE YOUR LOCALIZED SCSRIPT CODE WILL GO, RWEFERENCE THIS SCRIPT QOD-SCRIPT. 
+	//*** HERE IS WHERE YOUR LOCALIZED SCSRIPT CODE WILL GO, REFERENCE THIS SCRIPT QOD-SCRIPT. 
 	// *** LOOK AT THE WP REST API SLIDES PR THE WP=2017 THEME FUNCTIONS .PHP FOR MORE INFO
 }
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
