@@ -5,6 +5,7 @@
 /* Links */
 
 a {
+
 	color: $color__link;
 
 	&:visited {}
@@ -28,6 +29,7 @@ a {
 /* Menus */
 
 .main-navigation {
+
 	clear: both;
 	display: block;
 	float: left;
@@ -86,8 +88,11 @@ a {
 	}
 
 	a {
+		color: #0c0;
 		display: block;
 		text-decoration: none;
+		margin: 70px 10px 15px 0px;
+		border-left: 1px solid #ffffff;
 	}
 
 	.current_page_item>a,
@@ -99,6 +104,8 @@ a {
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+
+
 }
 
 @media screen and (min-width: 768px) {

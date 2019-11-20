@@ -4,7 +4,23 @@
 
 }
 
-.title-block {
-    display: flex;
-    flex-direction: row;
+.dev-logo {
+    width: 300px;
+    padding-top: 40px;
+    font-size: 1.25rem;
+
+    //media query tablet
+    @media (min-width: $tablet-width) {
+        width: 500px;
+        margin-bottom: 50px;
+        font-size: 1.75rem;
+    }
+
+    @media (min-width: $desktop-width) {
+
+        width: 500px;
+        margin-bottom: 50px;
+    }
+
+
 }

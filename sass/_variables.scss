@@ -15,13 +15,21 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: white;
-// $color__link-visited: purple;
-// $color__link-hover: midnightblue;
+$color__link:color #0c0;
+$color__link-visited:color #0c0;
+;
+$color__link-hover: color #0c0;
+
+// Media query
+
+$tablet-width: 620px;
+$desktop-width: 1080px;
+
 
 // Typography
 
-$font__main: sans-serif;
+$font__main: 'Exo',
+sans-serif;
 $font__code: Monaco,
 Consolas,
 "Andale Mono",

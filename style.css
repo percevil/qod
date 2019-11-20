@@ -39,6 +39,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## All Archives Page
 	## Submit a Quote Page
 --------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Exo:300,300i,400,400i&display=swap);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -230,7 +231,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Exo", sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -350,6 +351,9 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+  margin-top: 10px;
+  height: 45px;
+  width: 210px;
   border: 1px solid;
   color: #00cc00;
   border-radius: 3px;
@@ -409,11 +413,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
-  a:visited {
-    color: #00cc00; }
+  color: color #0c0; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: color #0c0; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -453,8 +455,11 @@ a {
     float: left;
     position: relative; }
   .main-navigation a {
+    color: #0c0;
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    margin: 70px 10px 15px 0px;
+    border-left: 1px solid #ffffff; }
 
 /* Small menu. */
 .menu-toggle,
@@ -594,14 +599,29 @@ object {
 #page {
   background-color: #222222; }
 
-.title-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+.dev-logo {
+  width: 300px;
+  padding-top: 40px;
+  font-size: 1.25rem; }
+  @media (min-width: 620px) {
+    .dev-logo {
+      width: 500px;
+      margin-bottom: 50px;
+      font-size: 1.75rem; } }
+  @media (min-width: 1080px) {
+    .dev-logo {
+      width: 500px;
+      margin-bottom: 50px; } }
 
 body {
   background-color: #222222; }
+
+.brought-to {
+  color: white;
+  text-decoration: none; }
+
+.main-navigation ul {
+  display: block; }
+
+.red-link {
+  color: #0c0; }
