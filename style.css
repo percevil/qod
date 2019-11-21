@@ -236,16 +236,33 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both;
   color: white; }
 
 /* Copy */
 p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 1.5rem;
   color: white; }
+  @media (min-width: 620px) {
+    p {
+      position: relative;
+      left: 26px;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -264,15 +281,20 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: .9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -459,7 +481,8 @@ a {
     display: block;
     text-decoration: none;
     margin: 70px 10px 15px 0px;
-    border-left: 1px solid #ffffff; }
+    padding-right: 10px;
+    border-right: 1px solid #ffffff; }
 
 /* Small menu. */
 .menu-toggle,
@@ -569,6 +592,11 @@ a {
 .entry-content,
 .entry-summary {
   margin: 1.5rem 0 0; }
+  @media (min-width: 620px) {
+    .page-content,
+    .entry-content,
+    .entry-summary {
+      font-size: 2.5rem; } }
 
 .page-links {
   clear: both;
@@ -602,26 +630,101 @@ object {
 .dev-logo {
   width: 300px;
   padding-top: 40px;
+  padding-left: 26px;
   font-size: 1.25rem; }
-  @media (min-width: 620px) {
-    .dev-logo {
-      width: 500px;
-      margin-bottom: 50px;
-      font-size: 1.75rem; } }
   @media (min-width: 1080px) {
     .dev-logo {
-      width: 500px;
-      margin-bottom: 50px; } }
+      padding-top: 0px;
+      margin-left: 210px;
+      height: 110px;
+      width: 700px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 body {
   background-color: #222222; }
 
-.brought-to {
+@media (min-width: 620px) {
+  .brought-to {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 53px; } }
+
+.brought-to a {
   color: white;
   text-decoration: none; }
+
+.nav-container {
+  position: relative;
+  left: 25px; }
+  @media (min-width: 620px) {
+    .nav-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .main-navigation ul {
   display: block; }
 
-.red-link {
+#red-link {
   color: #0c0; }
+
+@media (min-width: 620px) {
+  .site-main {
+    font-size: 1.5rem; } }
+
+@media (min-width: 1080px) {
+  .site-main div::after {
+    content: "<i class=" fas fa-quote-left "></i>"; } }
+
+.site-main .site-main article {
+  margin-left: 10px; }
+
+.site-main #new-quote-button {
+  font-size: 1rem;
+  margin-left: 26px; }
+  @media (min-width: 620px) {
+    .site-main #new-quote-button {
+      font-size: 1.25rem;
+      height: 55px;
+      width: 240px;
+      margin-left: 400px; } }
+
+.entry-content {
+  width: 660px;
+  height: 180px;
+  margin: 57px 0px 0px 203px; }
+
+.entry-content p {
+  margin-left: 26px; }
+
+.content-container {
+  height: 660px;
+  width: 510px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.entry-title {
+  margin-left: 26px; }
+  @media (min-width: 1080px) {
+    .entry-title {
+      margin-left: 255px;
+      font-size: 1.25rem; } }
+
+@media (min-width: 620px) {
+  #page {
+    margin-left: 26px; } }

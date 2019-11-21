@@ -88,11 +88,13 @@ a {
 	}
 
 	a {
+		
 		color: #0c0;
 		display: block;
 		text-decoration: none;
 		margin: 70px 10px 15px 0px;
-		border-left: 1px solid #ffffff;
+		padding-right: 10px;
+		border-right: 1px solid #ffffff;
 	}
 
 	.current_page_item>a,

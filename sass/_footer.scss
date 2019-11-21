@@ -3,16 +3,38 @@ body {
 }
 
 .brought-to {
-    color: white;
-    text-decoration: none;
+    // 
 
+    @media (min-width: $tablet-width) {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        padding-top: 53px;
+    }
 }
 
+.brought-to a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-container {
+    position: relative;
+    left: 25px;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+    }
+}
+
+
+
 .main-navigation ul {
+
     display: block;
 }
 
-.red-link {
+#red-link {
     color: #0c0;
     ;
 }
