@@ -3,28 +3,47 @@
         font-size: 1.5rem;
     }
 
+}
+
+
+
+// quotation marks
+.site-content::after {
     @media (min-width: $desktop-width) {
-        div::after {
-            content: "<i class="fas fa-quote-left"></i>";
-        }
-    }
+        color: #0c0;
+        font-family: "font awesome 5 free";
+        font-weight: 900;
+        content: "\f10d";
 
-    .site-main article {
-        margin-left: 10px;
-    }
-
-    #new-quote-button {
-        font-size: 1rem;
-        margin-left: 26px;
-
-        @media (min-width: $tablet-width) {
-            font-size: 1.25rem;
-            height: 55px;
-            width: 240px;
-            margin-left: 400px;
-        }
     }
 }
+
+.site-content::before {
+    @media (min-width: $desktop-width) {
+        color: #0c0;
+        font-family: "font awesome 5 free";
+        font-weight: 900;
+        content: "\f10e";
+
+    }
+}
+
+.site-main article {
+    margin-left: 10px;
+}
+
+#new-quote-button {
+    font-size: 1rem;
+    margin-left: 26px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 1.25rem;
+        height: 55px;
+        width: 240px;
+        margin-left: 400px;
+    }
+}
+
 
 .entry-content {
     width: 660px;

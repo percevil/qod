@@ -11,9 +11,9 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-			
+<!-- 			
 			<i class="fas fa-quote-left"></i>
-			<i class="fas fa-quote-right"></i>
+			<i class="fas fa-quote-right"></i> -->
 
 
 			<?php /* Start the Loop */ ?>

@@ -596,7 +596,7 @@ a {
     .page-content,
     .entry-content,
     .entry-summary {
-      font-size: 2.5rem; } }
+      font-size: 2.0rem; } }
 
 .page-links {
   clear: both;
@@ -624,6 +624,9 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+.entry-content p {
+  margin: -105; }
+
 #page {
   background-color: #222222; }
 
@@ -683,17 +686,27 @@ body {
     font-size: 1.5rem; } }
 
 @media (min-width: 1080px) {
-  .site-main div::after {
-    content: "<i class=" fas fa-quote-left "></i>"; } }
+  .site-content::after {
+    color: #0c0;
+    font-family: "font awesome 5 free";
+    font-weight: 900;
+    content: "\f10d"; } }
 
-.site-main .site-main article {
+@media (min-width: 1080px) {
+  .site-content::before {
+    color: #0c0;
+    font-family: "font awesome 5 free";
+    font-weight: 900;
+    content: "\f10e"; } }
+
+.site-main article {
   margin-left: 10px; }
 
-.site-main #new-quote-button {
+#new-quote-button {
   font-size: 1rem;
   margin-left: 26px; }
   @media (min-width: 620px) {
-    .site-main #new-quote-button {
+    #new-quote-button {
       font-size: 1.25rem;
       height: 55px;
       width: 240px;
@@ -728,3 +741,26 @@ body {
 @media (min-width: 620px) {
   #page {
     margin-left: 26px; } }
+
+.element-style a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.element-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: outside none; }
+
+.element-style li {
+  list-style: outside none; }
+
+.element-style a {
+  text-decoration: none;
+  color: #00cc00;
+  margin: 20px 15px 0px 0px; }
