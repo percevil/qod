@@ -4,27 +4,39 @@
   }
 }
 
+.site-content {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto ;
+  position: relative;
+}
+
 // quotation marks
 .site-content::after {
   @media (min-width: $desktop-width) {
     color: #0c0;
+    font-size: 100px;
     font-family: 'font awesome 5 free';
     font-weight: 900;
     content: '\f10d';
+    position: absolute;
+    top: 0;
   }
 }
-
 .site-content::before {
   @media (min-width: $desktop-width) {
     color: #0c0;
+    font-size: 100px;
     font-family: 'font awesome 5 free';
     font-weight: 900;
     content: '\f10e';
+    position: absolute;
+    right: -100px;
   }
 }
 
 .site-main article {
-  margin-left: 10px;
+  
 }
 
 #new-quote-button {
@@ -33,45 +45,44 @@
 
   @media (min-width: $tablet-width) {
     font-size: 1.25rem;
-    height: 55px;
-    width: 240px;
-    margin-left: 400px;
+    // height: 55px;
+    // width: 240px;
+   
   }
 }
 
 .entry-content {
-  display: flex;
-  flex-wrap: wrap;
-  //   margin-left: 26px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // position: relative;
+  
 
   @media (min-width: $desktop-width) {
-    width: 660px;
-    height: 180px;
-    margin: 57px 0px 0px 203px;
+   
   }
 }
 
 .entry-content p {
-  margin-left: 20px;
+ 
 }
 
 .content-container p {
-  margin-left: 20px;
+ 
 }
 
 .entry-title {
-  margin-left: 26px;
+ 
   font-size: 16px;
 
   @media (min-width: $desktop-width) {
-    margin-left: 255px;
+    
     font-size: 1.25rem;
   }
 }
 
 #page {
   @media (min-width: $tablet-width) {
-    margin-left: 26px;
+ 
   }
   .source {
     display: none;
@@ -81,5 +92,11 @@
   display: none;
 }
 .menu-item-213 {
+  display: none;
+}
+.nav-next a {
+  display: none;
+}
+.nav-previous a {
   display: none;
 }

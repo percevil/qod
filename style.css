@@ -684,62 +684,46 @@ body {
   .site-main {
     font-size: 1.5rem; } }
 
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative; }
+
 @media (min-width: 1080px) {
   .site-content::after {
     color: #0c0;
+    font-size: 100px;
     font-family: 'font awesome 5 free';
     font-weight: 900;
-    content: '\f10d'; } }
+    content: '\f10d';
+    position: absolute;
+    top: 0; } }
 
 @media (min-width: 1080px) {
   .site-content::before {
     color: #0c0;
+    font-size: 100px;
     font-family: 'font awesome 5 free';
     font-weight: 900;
-    content: '\f10e'; } }
-
-.site-main article {
-  margin-left: 10px; }
+    content: '\f10e';
+    position: absolute;
+    right: -100px; } }
 
 #new-quote-button {
   font-size: 1rem;
   margin: 20px 0px 0px 26px; }
   @media (min-width: 620px) {
     #new-quote-button {
-      font-size: 1.25rem;
-      height: 55px;
-      width: 240px;
-      margin-left: 400px; } }
-
-.entry-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  @media (min-width: 1080px) {
-    .entry-content {
-      width: 660px;
-      height: 180px;
-      margin: 57px 0px 0px 203px; } }
-
-.entry-content p {
-  margin-left: 20px; }
-
-.content-container p {
-  margin-left: 20px; }
+      font-size: 1.25rem; } }
 
 .entry-title {
-  margin-left: 26px;
   font-size: 16px; }
   @media (min-width: 1080px) {
     .entry-title {
-      margin-left: 255px;
       font-size: 1.25rem; } }
-
-@media (min-width: 620px) {
-  #page {
-    margin-left: 26px; } }
 
 #page .source {
   display: none; }
@@ -748,6 +732,12 @@ body {
   display: none; }
 
 .menu-item-213 {
+  display: none; }
+
+.nav-next a {
+  display: none; }
+
+.nav-previous a {
   display: none; }
 
 .element-style a {
