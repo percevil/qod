@@ -1,81 +1,85 @@
 .site-main {
-    @media (min-width: $tablet-width) {
-        font-size: 1.5rem;
-    }
-
+  @media (min-width: $tablet-width) {
+    font-size: 1.5rem;
+  }
 }
-
-
 
 // quotation marks
 .site-content::after {
-    @media (min-width: $desktop-width) {
-        color: #0c0;
-        font-family: "font awesome 5 free";
-        font-weight: 900;
-        content: "\f10d";
-
-    }
+  @media (min-width: $desktop-width) {
+    color: #0c0;
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    content: '\f10d';
+  }
 }
 
 .site-content::before {
-    @media (min-width: $desktop-width) {
-        color: #0c0;
-        font-family: "font awesome 5 free";
-        font-weight: 900;
-        content: "\f10e";
-
-    }
+  @media (min-width: $desktop-width) {
+    color: #0c0;
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    content: '\f10e';
+  }
 }
 
 .site-main article {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 #new-quote-button {
-    font-size: 1rem;
-    margin-left: 26px;
+  font-size: 1rem;
+  margin: 20px 0px 0px 26px;
 
-    @media (min-width: $tablet-width) {
-        font-size: 1.25rem;
-        height: 55px;
-        width: 240px;
-        margin-left: 400px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 1.25rem;
+    height: 55px;
+    width: 240px;
+    margin-left: 400px;
+  }
 }
 
-
 .entry-content {
+  display: flex;
+  flex-wrap: wrap;
+  //   margin-left: 26px;
+
+  @media (min-width: $desktop-width) {
     width: 660px;
     height: 180px;
     margin: 57px 0px 0px 203px;
+  }
 }
 
 .entry-content p {
-    margin-left: 26px;
+  margin-left: 20px;
 }
 
-.content-container {
-    height: 660px;
-    width: 510px;
-    display: flex;
-    flex-direction: column;
+.content-container p {
+  margin-left: 20px;
 }
 
 .entry-title {
-    margin-left: 26px;
+  margin-left: 26px;
+  font-size: 16px;
 
-    @media (min-width: $desktop-width) {
-        margin-left: 255px;
-        font-size: 1.25rem;
-    }
-
-
+  @media (min-width: $desktop-width) {
+    margin-left: 255px;
+    font-size: 1.25rem;
+  }
 }
 
 #page {
-    @media (min-width: $tablet-width) {
-        margin-left: 26px;
-    }
-
+  @media (min-width: $tablet-width) {
+    margin-left: 26px;
+  }
+  .source {
+    display: none;
+  }
+}
+.source a {
+  display: none;
+}
+.menu-item-213 {
+  display: none;
 }

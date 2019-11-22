@@ -1,36 +1,24 @@
 #page {
-    // background: #222222;
-    background-color: #222222;
-
+  // background: #222222;
+  background-color: #222222;
 }
 
 .dev-logo {
-    width: 300px;
-    padding-top: 40px;
-    padding-left: 26px;
-    font-size: 1.25rem;
+  width: 300px;
+  margin-left: 20px;
 
+  //media query tablet
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    margin-bottom: 50px;
+  }
 
-    //media query tablet
-    @media (min-width: $tablet-width) {
-        // width: 500px;
-        // margin-bottom: 50px;
-
-    }
-
-    @media (min-width: $desktop-width) {
-
-        padding-top: 0px;
-        margin-left: 210px;
-        height: 110px;
-        width: 700px;
-        display: flex;
-        align-items: center;
-
-
-
-
-    }
-
-
+  @media (min-width: $desktop-width) {
+    padding-top: 0px;
+    margin-left: 210px;
+    height: 110px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+  }
 }

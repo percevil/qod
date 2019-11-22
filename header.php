@@ -26,7 +26,7 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 
 					<a href="<?php echo home_url(); ?>">
-						<img class="dev-logo" src=" <?php echo get_template_directory_uri(); ?>/qod-logo.svg" alt="the word On">
+						<img  class="dev-logo" src=" <?php echo get_template_directory_uri(); ?>/qod-logo.svg" alt="the word On">
 					</a>
 				
 

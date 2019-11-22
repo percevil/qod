@@ -8,14 +8,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+	
+			<!-- <i class="fas fa-quote-left"></i>
+			<i class="fas fa-quote-right"></i>  -->
+
 
 			<?php if ( have_posts() ) : ?>
-
-<!-- 			
-			<i class="fas fa-quote-left"></i>
-			<i class="fas fa-quote-right"></i> -->
-
-
 			<?php /* Start the Loop */ ?>
 			<div class="content-container">
 
@@ -27,11 +25,11 @@ get_header(); ?>
 				<?php endwhile; ?>
 
 				<?php else : ?>
-
+		</div>
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 				<?php endif; ?>
-			</div>
+			
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

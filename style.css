@@ -480,7 +480,7 @@ a {
     color: #0c0;
     display: block;
     text-decoration: none;
-    margin: 70px 10px 15px 0px;
+    margin: 70px 10px 10px 0px;
     padding-right: 10px;
     border-right: 1px solid #ffffff; }
 
@@ -629,9 +629,11 @@ object {
 
 .dev-logo {
   width: 300px;
-  padding-top: 40px;
-  padding-left: 26px;
-  font-size: 1.25rem; }
+  margin-left: 20px; }
+  @media (min-width: 620px) {
+    .dev-logo {
+      width: 500px;
+      margin-bottom: 50px; } }
   @media (min-width: 1080px) {
     .dev-logo {
       padding-top: 0px;
@@ -685,23 +687,23 @@ body {
 @media (min-width: 1080px) {
   .site-content::after {
     color: #0c0;
-    font-family: "font awesome 5 free";
+    font-family: 'font awesome 5 free';
     font-weight: 900;
-    content: "\f10d"; } }
+    content: '\f10d'; } }
 
 @media (min-width: 1080px) {
   .site-content::before {
     color: #0c0;
-    font-family: "font awesome 5 free";
+    font-family: 'font awesome 5 free';
     font-weight: 900;
-    content: "\f10e"; } }
+    content: '\f10e'; } }
 
 .site-main article {
   margin-left: 10px; }
 
 #new-quote-button {
   font-size: 1rem;
-  margin-left: 26px; }
+  margin: 20px 0px 0px 26px; }
   @media (min-width: 620px) {
     #new-quote-button {
       font-size: 1.25rem;
@@ -710,26 +712,26 @@ body {
       margin-left: 400px; } }
 
 .entry-content {
-  width: 660px;
-  height: 180px;
-  margin: 57px 0px 0px 203px; }
-
-.entry-content p {
-  margin-left: 26px; }
-
-.content-container {
-  height: 660px;
-  width: 510px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (min-width: 1080px) {
+    .entry-content {
+      width: 660px;
+      height: 180px;
+      margin: 57px 0px 0px 203px; } }
+
+.entry-content p {
+  margin-left: 20px; }
+
+.content-container p {
+  margin-left: 20px; }
 
 .entry-title {
-  margin-left: 26px; }
+  margin-left: 26px;
+  font-size: 16px; }
   @media (min-width: 1080px) {
     .entry-title {
       margin-left: 255px;
@@ -738,6 +740,15 @@ body {
 @media (min-width: 620px) {
   #page {
     margin-left: 26px; } }
+
+#page .source {
+  display: none; }
+
+.source a {
+  display: none; }
+
+.menu-item-213 {
+  display: none; }
 
 .element-style a {
   display: -webkit-box;

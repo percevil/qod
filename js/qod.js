@@ -2,14 +2,14 @@
 
     let lastPage = '';
 
+
+    ////GET LOOP///////
+
+
     $("#new-quote-button").on('click', function (event) {
         event.preventDefault();
         lastPage = document.URL;
         console.log(lastPage);
-
-
-
-        // console.log();
 
         $.ajax({
             method: "GET",
@@ -17,12 +17,12 @@
 
         }).done(function (data) {
             const post = data[0];
+            console.log("post in ajax", post);
             history.pushState(null, null, qod_vars.home_url + '/' + post.slug);
+            $('.post').empty();
+            $('.post').append(post.content.rendered);
 
-
-            // alert('Quote worked !!!!!')
-            console.log(data);
-            // append the quote to the DOM
+            ////POST LOOP///////
 
         }).fail(function (error) {
             console.log("an error occurred", error);
