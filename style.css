@@ -624,9 +624,6 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
-.entry-content p {
-  margin: -105; }
-
 #page {
   background-color: #222222; }
 
@@ -764,3 +761,9 @@ body {
   text-decoration: none;
   color: #00cc00;
   margin: 20px 15px 0px 0px; }
+
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+/* All Archives Page */
+/* Submit a Quote Page */

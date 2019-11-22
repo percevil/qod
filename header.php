@@ -25,7 +25,9 @@
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 
-					<img class="dev-logo" src="wp-content/themes/qod/qod-logo.svg" alt="the word On">
+					<a href="<?php echo home_url(); ?>">
+						<img class="dev-logo" src=" <?php echo get_template_directory_uri(); ?>/qod-logo.svg" alt="the word On">
+					</a>
 				
 
 				
