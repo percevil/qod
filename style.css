@@ -700,7 +700,8 @@ body {
     font-weight: 900;
     content: '\f10d';
     position: absolute;
-    top: 0; } }
+    top: 0;
+    left: -100px; } }
 
 @media (min-width: 1080px) {
   .site-content::before {

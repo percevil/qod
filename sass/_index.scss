@@ -7,7 +7,7 @@
 .site-content {
   display: flex;
   max-width: 800px;
-  margin: 0 auto ;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -21,6 +21,7 @@
     content: '\f10d';
     position: absolute;
     top: 0;
+    left: -100px;
   }
 }
 .site-content::before {
@@ -36,7 +37,6 @@
 }
 
 .site-main article {
-  
 }
 
 #new-quote-button {
@@ -47,7 +47,6 @@
     font-size: 1.25rem;
     // height: 55px;
     // width: 240px;
-   
   }
 }
 
@@ -55,34 +54,27 @@
   // display: flex;
   // flex-wrap: wrap;
   // position: relative;
-  
 
   @media (min-width: $desktop-width) {
-   
   }
 }
 
 .entry-content p {
- 
 }
 
 .content-container p {
- 
 }
 
 .entry-title {
- 
   font-size: 16px;
 
   @media (min-width: $desktop-width) {
-    
     font-size: 1.25rem;
   }
 }
 
 #page {
   @media (min-width: $tablet-width) {
- 
   }
   .source {
     display: none;
